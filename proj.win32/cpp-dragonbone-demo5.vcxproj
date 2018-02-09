@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{27C24200-3EBF-441E-A352-2F388BDE1030}</ProjectGuid>
+    <RootNamespace>cpp-dragonbone-demo5</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\..\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="..\..\..\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\..\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\cpp-dragonbone-demo5\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\cpp-dragonbone-demo5\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Classes;../DragonBonesCPP/3rdParty;../DragonBonesCPP\Cocos2DX_3.x\src;../DragonBonesCPP\DragonBones\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)$(Configuration).win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Copy files</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)$(Configuration).win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Copy files</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\CoreElement.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\DragHelper.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\Cocos2DX_3.x\src\dragonBones\cocos2dx\CCArmatureDisplay.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\Cocos2DX_3.x\src\dragonBones\cocos2dx\CCFactory.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\Cocos2DX_3.x\src\dragonBones\cocos2dx\CCSlot.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\Cocos2DX_3.x\src\dragonBones\cocos2dx\CCTextureAtlasData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\Animation.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\AnimationState.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\BaseTimelineState.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\TimelineState.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\WorldClock.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\Armature.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\Bone.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\Constraint.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\Slot.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\TransformObject.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\core\BaseObject.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\core\DragonBones.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\event\EventObject.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\factory\BaseFactory.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\geom\Point.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\geom\Transform.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\AnimationConfig.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\AnimationData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\ArmatureData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\BoundingBoxData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\CanvasData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\ConstraintData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\DisplayData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\DragonBonesData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\SkinData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\TextureAtlasData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\UserData.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\parser\BinaryDataParser.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\parser\DataParser.cpp" />
+    <ClCompile Include="..\DragonBonesCPP\DragonBones\src\dragonBones\parser\JSONDataParser.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\allocators.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\document.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\encodedstream.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\encodings.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\error\en.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\error\error.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\filereadstream.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\filewritestream.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\fwd.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\itoa.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\meta.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\pow10.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\regex.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\stack.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\strtod.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\internal\swap.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\memorybuffer.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\memorystream.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\pointer.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\prettywriter.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\rapidjson.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\reader.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\schema.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\stream.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\stringbuffer.h" />
+    <ClInclude Include="..\DragonBonesCPP\3rdParty\rapidjson\writer.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\AnimationBase.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\AnimationLayer.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\AppDelegate.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\BaseDemo.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\BoneOffset.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\BoundingBox.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\CoreElement.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\DragHelper.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\DragonBonesEvent.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\DragonBonesTest.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\FrameAnimationTest.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\HelloDragonBones.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\InverseKinematics.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\PerformanceTest.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\ReplaceAnimation.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\ReplaceSkin.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\ReplaceSlotDisplay.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\src\dragonBones\cocos2dx\CCArmatureDisplay.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\src\dragonBones\cocos2dx\CCDragonBonesHeaders.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\src\dragonBones\cocos2dx\CCFactory.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\src\dragonBones\cocos2dx\CCSlot.h" />
+    <ClInclude Include="..\DragonBonesCPP\Cocos2DX_3.x\src\dragonBones\cocos2dx\CCTextureAtlasData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\Animation.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\AnimationState.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\BaseTimelineState.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\IAnimatable.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\TimelineState.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\animation\WorldClock.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\Armature.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\Bone.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\Constraint.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\IArmatureProxy.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\Slot.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\armature\TransformObject.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\core\BaseObject.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\core\DragonBones.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\DragonBonesHeaders.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\event\EventObject.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\event\IEventDispatcher.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\factory\BaseFactory.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\geom\ColorTransform.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\geom\Matrix.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\geom\Point.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\geom\Rectangle.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\geom\Transform.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\AnimationConfig.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\AnimationData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\ArmatureData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\BoundingBoxData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\CanvasData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\ConstraintData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\DisplayData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\DragonBonesData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\SkinData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\TextureAtlasData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\model\UserData.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\parser\BinaryDataParser.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\parser\DataParser.h" />
+    <ClInclude Include="..\DragonBonesCPP\DragonBones\src\dragonBones\parser\JSONDataParser.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

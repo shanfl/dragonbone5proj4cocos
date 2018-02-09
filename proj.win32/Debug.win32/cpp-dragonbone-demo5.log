@@ -1,0 +1,89 @@
+﻿Build started 2018/2/8 9:29:16.
+     1>Project "C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\proj.win32\cpp-dragonbone-demo5.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         
+         xcopy "C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\proj.win32\..\Resources" "C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\" /D /E /I /F /Y
+         xcopy "C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\..\*.dll" "C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\" /D /Y
+         :VCEnd
+         复制了 0 个文件
+         复制了 0 个文件
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Classes /I../DragonBonesCPP/3rdParty /I../DragonBonesCPP\Cocos2DX_3.x\src /I../DragonBonesCPP\DragonBones\src /I"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\cocos\2d\..\..\cocos" /I"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\cocos\2d\..\..\cocos/editor-support" /I"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\cocos\2d\..\..\external" /I"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\cocos\2d\..\..\external\openssl\include\win32" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\DragonBonesCPP\Cocos2DX_3.x\Demos\Classes\AppDelegate.cpp
+         AppDelegate.cpp
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\cocos2dx_3.x\src\dragonbones\cocos2dx\cctextureatlasdata.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\core\dragonbones.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\core\baseobject.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\geom\matrix.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\geom\point.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\geom\rectangle.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\geom\transform.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\model\textureatlasdata.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\model\userdata.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\model\dragonbonesdata.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\model\armaturedata.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\model\skindata.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\model\boundingboxdata.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\model\animationdata.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\model\animationconfig.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\armature\iarmatureproxy.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\event\ieventdispatcher.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\armature\armature.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\animation\ianimatable.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\armature\transformobject.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\armature\bone.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\animation\animationstate.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\armature\slot.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\animation\worldclock.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\animation\animation.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\event\eventobject.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\dragonbones\src\dragonbones\factory\basefactory.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\cocos2dx_3.x\src\dragonbones\cocos2dx\ccslot.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>c:\users\dell-optiplex7040-sh\homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\dragonbonescpp\cocos2dx_3.x\src\dragonbones\cocos2dx\ccfactory.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\cpp-dragonbone-demo5.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\\" /LIBPATH:"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32" /LIBPATH:"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\\" glew32.lib opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib libbox2d.lib libSpine.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\cpp-dragonbone-demo5.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\cpp-dragonbone-demo5.lib" /MACHINE:X86 /SAFESEH Debug.win32\AppDelegate.obj
+         Debug.win32\CoreElement.obj
+         Debug.win32\DragHelper.obj
+         Debug.win32\CCArmatureDisplay.obj
+         Debug.win32\CCFactory.obj
+         Debug.win32\CCSlot.obj
+         Debug.win32\CCTextureAtlasData.obj
+         Debug.win32\Animation.obj
+         Debug.win32\AnimationState.obj
+         Debug.win32\BaseTimelineState.obj
+         Debug.win32\TimelineState.obj
+         Debug.win32\WorldClock.obj
+         Debug.win32\Armature.obj
+         Debug.win32\Bone.obj
+         Debug.win32\Constraint.obj
+         Debug.win32\Slot.obj
+         Debug.win32\TransformObject.obj
+         Debug.win32\BaseObject.obj
+         Debug.win32\DragonBones.obj
+         Debug.win32\EventObject.obj
+         Debug.win32\BaseFactory.obj
+         Debug.win32\Point.obj
+         Debug.win32\Transform.obj
+         Debug.win32\AnimationConfig.obj
+         Debug.win32\AnimationData.obj
+         Debug.win32\ArmatureData.obj
+         Debug.win32\BoundingBoxData.obj
+         Debug.win32\CanvasData.obj
+         Debug.win32\ConstraintData.obj
+         Debug.win32\DisplayData.obj
+         Debug.win32\DragonBonesData.obj
+         Debug.win32\SkinData.obj
+         Debug.win32\TextureAtlasData.obj
+         Debug.win32\UserData.obj
+         Debug.win32\BinaryDataParser.obj
+         Debug.win32\DataParser.obj
+         Debug.win32\JSONDataParser.obj
+         Debug.win32\main.obj
+         "C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\libcocos2d.lib"
+     1>AppDelegate.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\cpp-dragonbone-demo5.lib and object C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\cpp-dragonbone-demo5.exp
+         cpp-dragonbone-demo5.vcxproj -> C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\build\Debug.win32\cpp-dragonbone-demo5\cpp-dragonbone-demo5.exe
+     1>Done Building Project "C:\Users\Dell-OptiPlex7040-sh\Homework\cocos2d-x-3.16\tests\cpp-dragonbone-demo5\proj.win32\cpp-dragonbone-demo5.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:38.65
