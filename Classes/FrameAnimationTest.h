@@ -21,10 +21,10 @@ protected:
 	virtual void _onStart()
 	{
 		const auto factory = dragonBones::CCFactory::getFactory();
-		factory->loadDragonBonesData("progress_bar/progress_bar_ske.json");
-		factory->loadTextureAtlasData("progress_bar/progress_bar_tex.json");
+		factory->loadDragonBonesData("FrameAnimation/FramesAnimation_ske.json");
+		factory->loadTextureAtlasData("FrameAnimation/FramesAnimation_tex.json");
 
-		_armatureDisplay = factory->buildArmatureDisplay("progress_bar");
+		_armatureDisplay = factory->buildArmatureDisplay("boy-fall");
 		_armatureDisplay->setPosition(0.0f, 0.0f);
 		addChild(_armatureDisplay);
 
@@ -39,7 +39,7 @@ protected:
 		_armatureDisplay->getEventDispatcher()->addCustomEventListener(dragonBones::EventObject::FADE_OUT, std::bind(&FrameAnimationTest::_animationEventHandler, this, std::placeholders::_1));
 		_armatureDisplay->getEventDispatcher()->addCustomEventListener(dragonBones::EventObject::FADE_OUT_COMPLETE, std::bind(&FrameAnimationTest::_animationEventHandler, this, std::placeholders::_1));
 		_armatureDisplay->getEventDispatcher()->addCustomEventListener(dragonBones::EventObject::FRAME_EVENT, std::bind(&FrameAnimationTest::_animationEventHandler, this, std::placeholders::_1));
-		_armatureDisplay->getAnimation()->play("idle");
+		_armatureDisplay->getAnimation()->play("boy-fall");
 		//
 		const auto listener = cocos2d::EventListenerMouse::create();
 		listener->onMouseDown = CC_CALLBACK_1(FrameAnimationTest::_mouseDownHandler, this);
@@ -54,7 +54,7 @@ private:
 	void _mouseDownHandler(cocos2d::EventMouse* event)
 	{
 		const auto progress = std::min(std::max((event->getCursorX() - getPosition().x + 300.0f) / 600.0f, 0.0f), 1.0f);
-		_armatureDisplay->getAnimation()->gotoAndStopByProgress("idle", progress);
+		_armatureDisplay->getAnimation()->gotoAndStopByProgress("boy-fall", progress);
 	}
 
 	void _mouseUpHandler(cocos2d::EventMouse* event)
@@ -70,7 +70,7 @@ private:
 		}
 
 		const auto progress = std::min(std::max((event->getCursorX() - getPosition().x + 300.0f) / 600.0f, 0.0f), 1.0f);
-		const auto animationState = _armatureDisplay->getAnimation()->getState("idle");
+		const auto animationState = _armatureDisplay->getAnimation()->getState("boy-fall");
 		if (animationState)
 		{
 			animationState->setCurrentTime(animationState->getTotalTime() * progress);
