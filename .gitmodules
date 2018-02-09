@@ -1,0 +1,3 @@
+[submodule "DragonBonesCPP"]
+	path = DragonBonesCPP
+	url = https://github.com/DragonBones/DragonBonesCPP.git
